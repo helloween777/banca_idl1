@@ -6,6 +6,9 @@ import argparse
 import random
 from datetime import datetime
 import pandas as pd
+import time
+start = time.time()
+
 
 DATA_DIR = "data"
 STREAM_DIR = "stream"
@@ -98,3 +101,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+end = time.time()
+print(f"⏱ Tiempo total de ejecución: {end - start:.2f} segundos")
